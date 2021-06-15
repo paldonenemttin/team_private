@@ -1,0 +1,50 @@
+section#contents {
+	width: 100%;
+	margin: 5px auto;
+	border: 1px solid #999;
+	display: flex;
+}
+
+section#contents article {
+	flex: 1;
+	height:400px;
+	width: 400px;
+	border: 1px solid green;
+	margin: 6px 3px;
+	padding: 5px;
+	margin:6px 3px;
+	background-size:100% 100%;
+	border-radius: 5px;
+}
+/* section#contents {
+	width:100%;
+	border: 1px solid #999;
+	display: flex;
+} */
+
+
+}
+
+article#art1 {
+	
+}
+
+article#art2 {
+	
+}
+
+article#art3 {
+	
+}
+
+article#art4 {
+	
+}
+
+article#art5 {
+	
+}
+
+article#art6 {
+	
+}
