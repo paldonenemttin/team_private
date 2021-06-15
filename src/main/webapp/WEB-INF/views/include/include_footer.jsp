@@ -8,6 +8,8 @@ footer {
 	background-color: #a6d6d6;
 	color: white;
 	padding: 5px;
+	position: absolute;
+	width: 100%;
 }
 
 address {

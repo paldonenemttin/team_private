@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+body{
+	height: 100%;
+}
 hr{
 	width:60%;
 	height: 2px;
@@ -59,7 +61,7 @@ input#time {
 textarea#box {
 	width: 70%;
 	height: 200px;
-	font-size: 12px;
+	font-size: 10px;
 	resize: none;
 	/*자동 스크롤*/
 	overflow: auto;

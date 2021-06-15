@@ -30,4 +30,12 @@
 		<input id="image" multiple="multiple" type="file" name="filename" />
 	</div>
 </body>
+
+<%@ include file="/WEB-INF/views/include/include_footer.jsp"%>
+
+<script type="text/javascript">
+document.querySelector("#save").addEventListener("click",(e)=>{
+    alert("데이터를 저장합니다.");
+});
+</script>
 </html>
