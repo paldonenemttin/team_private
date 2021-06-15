@@ -5,11 +5,12 @@
 <meta charset="UTF-8">
 <style>
 footer {
-	background-color: #a6d6d6;
+	background-color: rgb(3, 102, 53);
 	color: white;
 	padding: 5px;
 	position: absolute;
 	width: 100%;
+	margin-bottom:0;
 }
 
 address {

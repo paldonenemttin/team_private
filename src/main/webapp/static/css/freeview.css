@@ -1,5 +1,8 @@
 @charset "UTF-8";
-body{
+*{
+	box-sizing: border-box;
+}
+html,body{
 	height: 100%;
 }
 p#title {
@@ -41,10 +44,11 @@ div.main_cont {
 	margin-left: 25%;
 	border: 1px solid white;
 	width: 50%;
-	height: 80%;
+	height: 60%;
 }
 
 p#content {
+	margin:2px 2px 2px 2px;
 	font-size: 10px;
 }
 p#ex_image{
@@ -53,6 +57,7 @@ p#ex_image{
 	width:10%;
 	height: 50px;
 	font-size: 5px;	
+	margin: 2px 2px 2px 2px;
 }
 
 hr {
@@ -65,7 +70,7 @@ button {
 	background-color: rgb(3, 102, 53);
 	color: white;
 	border: none;
-	border-radius: 2px;
+	border-radius: 5px;
 	font-size: 15px;
 	transition: background-color 0.3s;
 	margin-bottom: 5px;
@@ -77,7 +82,7 @@ button:hover {
 	background-color: rgb(68, 32, 32);
 	color: white;
 	border: none;
-	border-radius: 2px;
+	border-radius: 5px;
 	font-size: 15px;
 	transition: background-color 0.3s;
 	cursor: pointer;
@@ -92,5 +97,13 @@ button#list {
 
 button#like {
 	font-size: 12px;
-	margin-left: 37%;
+	margin-left: 42.3%;
+}
+div.view_cont{
+	height:85%; 
+	position: relative;
+	
+}
+div.btn_avo_list{
+	padding-bottom: 52px;
 }
