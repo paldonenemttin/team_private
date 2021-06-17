@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.team.starbucks.model.BoardVO;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -20,6 +22,11 @@ public class FreeBoardController {
 	@RequestMapping(value = "/input", method = RequestMethod.GET)
 	public String insert() {
 		return "freeboard/input";
+		
+	}
+	@RequestMapping(value = "/input", method = RequestMethod.POST)
+	public String insert(BoardVO boardVO) {
+		return "redirect:/";
 		
 	}
 	
