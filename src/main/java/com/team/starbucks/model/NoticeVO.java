@@ -11,12 +11,11 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class BoardVO {
+public class NoticeVO {
 	
 	private Long seq;
 	private String title;
 	private String content;
-	private int like;
 	private String date;
 	private String time;
 
