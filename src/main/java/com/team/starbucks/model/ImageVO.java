@@ -11,13 +11,10 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class NoticeVO {
+public class ImageVO {
 	
-	private Long notice_code;
-	private String notice_title;
-	private String notice_content;
-	private String notice_date;
-	private String notice_time;
-	private String notice_user;
-
+	private String img_dbcode;
+	private String img_src;
+	
+	
 }

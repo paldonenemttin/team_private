@@ -1,10 +1,15 @@
 package com.team.starbucks.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.team.starbucks.model.BoardVO;
+import com.team.starbucks.model.ImageVO;
+import com.team.starbucks.model.LikeVO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,9 +18,10 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping(value = "/freeboard")
 public class FreeBoardController {
 
-	@RequestMapping(value = { "/", "" }, method = RequestMethod.GET)
-	public String freenotice() {
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
+	public String freenotice(HttpSession httpSession, Model model) {
 		log.info("freeboard {}.");
+		model.addAttribute("BOARDS", dbList);// 나중에 impl 추가
 		return "freeboard/list";
 	}
 
@@ -25,8 +31,8 @@ public class FreeBoardController {
 		
 	}
 	@RequestMapping(value = "/input", method = RequestMethod.POST)
-	public String insert(BoardVO boardVO) {
-		return "redirect:/";
+	public String insert(LikeVO likeVO, BoardVO boardVO, ImageVO imgVO) {
+		return "redirect:/freeboard/list";
 		
 	}
 	

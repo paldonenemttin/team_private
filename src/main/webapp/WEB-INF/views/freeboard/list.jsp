@@ -20,6 +20,7 @@
 		</div>
 		<div>
 			<table>
+			<c:choose>
 				<tr class="table">
 					<th id="th_no">번호</th>
 					<th id="th_title">제목</th>
@@ -30,12 +31,13 @@
 				</tr>
 				<tr class="value">
 					<td id="td_no">1</td>
-					<td id="td_title"><a href="freeboard/view">스타벅스 커스텀</a></td>
-					<td id="td_au">아무개</td>
+					<td id="td_title"><a href="freeboard/view">${}</a></td>
+					<td id="td_writer"></td>
 					<td id="td_avo">111</td>
 					<td id="td_date">yyyy-mm-dd</td>
 					<td id="td_time">hh:mm:ss</td>
 				</tr>
+				</c:choose>
 			</table>
 		</div>
 		<div class="ser_title">

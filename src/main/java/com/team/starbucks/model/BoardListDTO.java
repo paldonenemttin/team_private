@@ -11,13 +11,14 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class NoticeVO {
+public class BoardListDTO {
 	
-	private Long notice_code;
-	private String notice_title;
-	private String notice_content;
-	private String notice_date;
-	private String notice_time;
-	private String notice_user;
+	private String board_code;
+	private String board_content;
+	private String board_user;
+	private int like_count;
+	private String board_vcount;
+	private String board_date;
+	private String board_time;
 
 }

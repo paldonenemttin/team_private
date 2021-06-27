@@ -9,15 +9,17 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 @NoArgsConstructor
-public class NoticeVO {
+@AllArgsConstructor
+public class NoticeViewDTO {
 	
-	private Long notice_code;
+	private String notice_code;
 	private String notice_title;
 	private String notice_content;
+	private int notice_vcount;
+	private String notice_user;
 	private String notice_date;
 	private String notice_time;
-	private String notice_user;
+	private String img_src;
 
 }
