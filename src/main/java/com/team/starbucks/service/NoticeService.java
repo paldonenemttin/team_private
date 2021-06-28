@@ -9,4 +9,5 @@ public interface NoticeService {
 	
 	public List<NoticeDTO> selectList();
 	public List<NoticeViewDTO> selectView();
+	
 }
