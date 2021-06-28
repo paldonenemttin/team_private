@@ -21,7 +21,7 @@ public class FreeBoardController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String freenotice(HttpSession httpSession, Model model) {
 		log.info("freeboard {}.");
-		model.addAttribute("BOARDS", dbList);// ë‚˜ì¤‘ì— impl ì¶”ê°€
+		model.addAttribute("BOARDS", dbList);// ³ªÁß¿¡ impl Ãß°¡
 		return "freeboard/list";
 	}
 
